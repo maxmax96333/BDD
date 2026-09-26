@@ -1,0 +1,20 @@
+2026-09-26 15:54:34.423 [main] TRACE Application - {
+    # application.conf @ jar:file:/C:/Users/User/IdeaProjects/2.4.BDD/artifacts/app-ibank-build-for-testers.jar!/application.conf: 6
+    "application" : {
+        # application.conf @ jar:file:/C:/Users/User/IdeaProjects/2.4.BDD/artifacts/app-ibank-build-for-testers.jar!/application.conf: 7
+        "modules" : [
+            # application.conf @ jar:file:/C:/Users/User/IdeaProjects/2.4.BDD/artifacts/app-ibank-build-for-testers.jar!/application.conf: 7
+            "ru.netology.aqa.ApplicationKt.module"
+        ]
+    },
+    # application.conf @ jar:file:/C:/Users/User/IdeaProjects/2.4.BDD/artifacts/app-ibank-build-for-testers.jar!/application.conf: 2
+    "deployment" : {
+        # application.conf @ jar:file:/C:/Users/User/IdeaProjects/2.4.BDD/artifacts/app-ibank-build-for-testers.jar!/application.conf: 3
+        "port" : 9999
+    },
+    # Content hidden
+    "security" : "***"
+}
+
+2026-09-26 15:54:34.478 [DefaultDispatcher-worker-1] INFO  Application - No ktor.deployment.watch patterns specified, automatic reload is not active
+2026-09-26 15:54:35.156 [DefaultDispatcher-worker-1] INFO  Application - Responding at http://0.0.0.0:9999
