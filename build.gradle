@@ -32,6 +32,9 @@ test {
 
     if (System.getProperty('selenide.headless') != null) {
         systemProperty 'selenide.headless', System.getProperty('selenide.headless')
+        if (System.getProperty('selenide.remote') != null) {
+            systemProperty 'selenide.remote', System.getProperty('selenide.remote')
+        }
     }
 
     systemProperty 'chromeoptions.prefs',
