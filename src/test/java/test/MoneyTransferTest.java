@@ -1,33 +1,15 @@
 package test;
 
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.BeforeAll;
-import org.openqa.selenium.chrome.ChromeOptions;
+
 import ru.netology.data.DataHelper;
 import ru.netology.page.LoginPage;
-
-import static com.codeborne.selenide.Configuration.browserCapabilities;
 
 import static com.codeborne.selenide.Selenide.open;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class MoneyTransferTest {
-    @BeforeAll
-    static void configureHeadlessChromeInRestrictedEnvironments() {
-        if (Boolean.getBoolean("selenide.headless")) {
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments(
-                    "--no-sandbox",
-                    "--disable-gpu",
-                    "--disable-gpu-compositing",
-                    "--disable-extensions",
-                    "--disable-features=VizDisplayCompositor"
-            );
-            browserCapabilities = options;
-        }
-    }
-
     @Test
     void shouldTransferMoneyBetweenOwnCards() {
         open(DataHelper.APP_URL);

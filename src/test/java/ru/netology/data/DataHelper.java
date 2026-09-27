@@ -1,5 +1,7 @@
 package ru.netology.data;
 
+import lombok.Value;
+
 public final class DataHelper {
     public static final String APP_URL = "http://localhost:9999/";
 
@@ -31,21 +33,9 @@ public final class DataHelper {
         return normalized.substring(normalized.length() - 4);
     }
 
-    public static final class AuthInfo {
-        private final String login;
-        private final String password;
-
-        private AuthInfo(String login, String password) {
-            this.login = login;
-            this.password = password;
-        }
-
-        public String getLogin() {
-            return login;
-        }
-
-        public String getPassword() {
-            return password;
-        }
+    @Value
+    public static class AuthInfo {
+        String login;
+        String password;
     }
 }
